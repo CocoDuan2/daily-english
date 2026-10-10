@@ -1,6 +1,6 @@
 {
-  "title": "麦当劳点餐：妈妈问孩子想吃什么",
-  "intent": "说出想吃什么、回应要不要。",
+  "title": "麦当劳点餐：选好想吃的，再去点餐",
+  "intent": "说出自己想吃什么。",
   "mode": "full",
   "scene": "麦当劳点餐",
   "english_title": "Ordering at McDonald's",
@@ -8,10 +8,6 @@
   "theme_id": 7,
   "theme": "正餐与外出用餐",
   "dialogue": [
-    {
-      "role": "action",
-      "text": "妈妈带孩子来到麦当劳。孩子只需要表达想吃什么，点餐和付款由妈妈完成；中文、点头或摇头都可以。"
-    },
     {
       "role": "parent",
       "english": "We're at McDonald's!",
@@ -26,23 +22,23 @@
     },
     {
       "role": "parent",
-      "english": "What do you want to eat?",
-      "ipa": "/wʌt də juː wɑnt tə iːt/",
-      "chinese": "你想吃什么呀？"
+      "english": "What would you like to eat?",
+      "ipa": "/wʌt wʊd juː laɪk tə iːt/",
+      "chinese": "你想吃什么？"
     },
     {
       "role": "child",
       "english": "I want fries.",
       "ipa": "/aɪ wɑnt fraɪz/",
       "chinese": "我想吃薯条。",
-      "cue": "孩子说“薯条”或指一下时，妈妈先接住意思，再替孩子示范这句，愿意就跟一次，不说也照样点。",
+      "cue": "孩子指着薯条或用中文说时，先接住意思，再替孩子示范这句；愿意就轻邀跟一次。",
       "target": true
     },
     {
       "role": "parent",
-      "english": "Okay. Want a burger, too?",
-      "ipa": "/oʊˈkeɪ wɑnt ə ˈbɝɡɚ tuː/",
-      "chinese": "好呀，也想吃个汉堡吗？"
+      "english": "Okay. Do you want a burger too?",
+      "ipa": "/oʊˈkeɪ duː juː wɑnt ə ˈbɝɡɚ tuː/",
+      "chinese": "好呀。你还想要一个汉堡吗？"
     },
     {
       "role": "child",
@@ -54,64 +50,58 @@
       "role": "parent",
       "english": "Anything else?",
       "ipa": "/ˈɛniθɪŋ ɛls/",
-      "chinese": "还要什么吗？"
+      "chinese": "还想要什么吗？"
     },
     {
       "role": "child",
       "english": "I want ice cream.",
-      "ipa": "/aɪ wɑnt ˈaɪs kriːm/",
-      "chinese": "我想吃冰淇淋。",
-      "cue": "孩子确实想吃时，妈妈替孩子示范，轻邀一次；只说“冰淇淋”或点头也可以。",
-      "target": true
+      "ipa": "/aɪ wɑnt aɪs kriːm/",
+      "chinese": "我想吃冰淇淋。"
     },
     {
       "role": "parent",
-      "english": "Okay. We'll get some ice cream, too.",
-      "ipa": "/oʊˈkeɪ wiːl ɡɛt səm ˈaɪs kriːm tuː/",
+      "english": "Okay. We'll get some ice cream too.",
+      "ipa": "/oʊˈkeɪ wiːl ɡɛt səm aɪs kriːm tuː/",
       "chinese": "好，我们也买点冰淇淋。"
     },
     {
       "role": "child",
       "english": "I love ice cream!",
-      "ipa": "/aɪ lʌv ˈaɪs kriːm/",
-      "chinese": "我好喜欢冰淇淋！"
+      "ipa": "/aɪ lʌv aɪs kriːm/",
+      "chinese": "我最喜欢冰淇淋啦！"
     },
     {
       "role": "parent",
-      "english": "Okay. I'll order for us.",
-      "ipa": "/oʊˈkeɪ aɪl ˈɔrdɚ fɚ ʌs/",
-      "chinese": "好，妈妈来点餐。"
+      "english": "Okay. Let's go order.",
+      "ipa": "/oʊˈkeɪ lɛts ɡoʊ ˈɔrdɚ/",
+      "chinese": "好，我们去点餐吧。"
     },
     {
       "role": "child",
       "english": "Thank you, Mommy.",
-      "ipa": "/θæŋk juː ˈmɑmi/",
+      "ipa": "/ˈθæŋk juː ˈmɑmi/",
       "chinese": "谢谢妈妈。"
     },
     {
       "role": "action",
-      "text": "妈妈带着孩子完成点餐和付款，不需要孩子帮忙操作或复述要买的东西。"
+      "text": "妈妈带孩子一起点餐、付款，完成后找座位。"
     },
     {
       "role": "parent",
       "english": "All set. Let's find a table.",
       "ipa": "/ɔl sɛt lɛts faɪnd ə ˈteɪbəl/",
-      "chinese": "点好啦，我们找张桌子吧。"
+      "chinese": "好啦。我们找张桌子坐吧。"
     },
     {
       "role": "child",
       "english": "Let's go!",
       "ipa": "/lɛts ɡoʊ/",
       "chinese": "走吧！"
-    },
-    {
-      "role": "action",
-      "text": "孩子不想聊时，就停在已经表达的意思上，妈妈直接安排；不等跟读才给食物或水。"
     }
   ],
   "sources": [
-    "内部核对：CHAPTER28-04 L6088–6106（选择食物、I want zajangmian and sweet and sour pork.、点餐）；CHAPTER03-05 L1052–1086（What do you want to eat?、Can I have some ice cream?）。IPA新增，不渲染来源。",
-    "原句：What do you want to eat?；改写：I want fries. 据餐厅章节想吃食物的句子改为短句，I want ice cream. 据点心章节冰淇淋请求改写。其余本次未定位基础句的对话按原创补充处理。 Anything else? 据点心章节 Is there anything else? 缩短。"
+    "内部核对：CHAPTER28-04 L6088–L6106，I want fries. 与 I want a burger. 据 I want zajangmian and sweet and sour pork. 替换食物；CHAPTER03-05 L1052–L1086，What would you like to eat? 据 What do you want to eat? 改写，Anything else? 据 Is there anything else? 缩短，I want ice cream. 据 Can I have some ice cream? 改写。",
+    "其余台词为用户确认的场景补充；汉堡询问采用完整句，妈妈带孩子一起点餐。IPA及中文新增；来源仅作内部核对，不渲染。"
   ],
   "archive": {
     "date": "2026-10-10",
@@ -120,7 +110,7 @@
     "created_at": "2026-10-10T09:56:17.990563+08:00",
     "image_filename": "2026-10-10-吃麦当劳-01.png",
     "image_width": 1080,
-    "image_height": 3894,
-    "updated_at": "2026-10-10T14:54:04.798975+08:00"
+    "image_height": 3728,
+    "updated_at": "2026-10-10T16:44:00.745862+08:00"
   }
 }

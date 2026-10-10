@@ -1,0 +1,124 @@
+{
+  "title": "睡前读绘本：孩子选了五本",
+  "english_title": "A Bedtime Story",
+  "scene": "睡前读绘本",
+  "intent": "选出想看的书，说想先读哪一本。",
+  "theme_id": 24,
+  "mode": "full",
+  "date": "2026-10-10",
+  "dialogue": [
+    {
+      "role": "parent",
+      "english": "Which books do you want to read tonight?",
+      "ipa": "/wɪtʃ bʊks duː juː wɑnt tə riːd təˈnaɪt/",
+      "chinese": "今晚想看哪几本书呀？"
+    },
+    {
+      "role": "action",
+      "text": "孩子从书架上选了五本，拿过来或指给大人看。"
+    },
+    {
+      "role": "child",
+      "english": "I want these.",
+      "ipa": "/aɪ wɑnt ðiːz/",
+      "chinese": "我想看这些。"
+    },
+    {
+      "role": "parent",
+      "english": "You picked five books!",
+      "ipa": "/juː pɪkt faɪv bʊks/",
+      "chinese": "你选了五本呀！"
+    },
+    {
+      "role": "parent",
+      "english": "Which one should we read first?",
+      "ipa": "/wɪtʃ wʌn ʃʊd wiː riːd fɝst/",
+      "chinese": "我们先读哪一本？"
+    },
+    {
+      "role": "child",
+      "english": "This one, please.",
+      "ipa": "/ðɪs wʌn pliːz/",
+      "chinese": "先读这本吧。",
+      "target": true,
+      "cue": "孩子指向一本时，替孩子示范这句，愿意就轻邀跟一次；只指书或用中文说也可以。"
+    },
+    {
+      "role": "parent",
+      "english": "This book looks fun.",
+      "ipa": "/ðɪs bʊk lʊks fʌn/",
+      "chinese": "这本书看起来很有趣。"
+    },
+    {
+      "role": "action",
+      "text": "一起坐舒服，打开孩子选的第一本，按绘本内容往下读。读到需要翻页时："
+    },
+    {
+      "role": "parent",
+      "english": "Turn the page.",
+      "ipa": "/tɝn ðə peɪdʒ/",
+      "chinese": "翻一页吧。"
+    },
+    {
+      "role": "child",
+      "english": "I'll do it!",
+      "ipa": "/aɪl duː ɪt/",
+      "chinese": "我来！"
+    },
+    {
+      "role": "action",
+      "text": "让孩子翻页，接着读。第一本读完，孩子还想继续时："
+    },
+    {
+      "role": "parent",
+      "english": "Which one is next?",
+      "ipa": "/wɪtʃ wʌn ɪz nɛkst/",
+      "chinese": "接下来读哪一本？"
+    },
+    {
+      "role": "child",
+      "english": "This one!",
+      "ipa": "/ðɪs wʌn/",
+      "chinese": "这本！"
+    },
+    {
+      "role": "action",
+      "text": "把下一本拿过来，继续读。后面也可以这样接；选了五本不代表一定要全部读完，困了就收尾。"
+    },
+    {
+      "role": "child",
+      "english": "I'm sleepy.",
+      "ipa": "/aɪm ˈsliːpi/",
+      "chinese": "我困了。"
+    },
+    {
+      "role": "parent",
+      "english": "Okay. It's time for bed.",
+      "ipa": "/oʊˈkeɪ ɪts taɪm fɚ bɛd/",
+      "chinese": "好，那该睡觉啦。"
+    },
+    {
+      "role": "action",
+      "text": "合上书，安顿孩子睡觉。"
+    },
+    {
+      "role": "parent",
+      "english": "Good night.",
+      "ipa": "/ɡʊd naɪt/",
+      "chinese": "晚安。"
+    }
+  ],
+  "sources": [
+    "内部核对：CHAPTER33-01 L6927–L6961，选书与 This book looks fun. 为原句；CHAPTER33-02 L6962–L6982，翻页、读完和继续选书按场景筛选及轻微改写；CHAPTER04-11 L1596–L1628，困了的回应与睡前收尾。",
+    "孩子选五本、数量回应、翻页衔接、困了收尾为当前场景补充；IPA及中文为新增，不呈现在页面中。"
+  ],
+  "archive": {
+    "date": "2026-10-10",
+    "filename": "2026-10-10-睡前读绘本-01.html",
+    "sequence": 1,
+    "created_at": "2026-10-10T15:30:04.454222+08:00",
+    "image_filename": "2026-10-10-睡前读绘本-01.png",
+    "image_width": 1080,
+    "image_height": 3784
+  }
+}
