@@ -1,0 +1,143 @@
+{
+  "title": "幼儿园接孩子：见面、告别、回家",
+  "english_title": "Picking You Up",
+  "intent": "想让大人抱、想喝水。",
+  "mode": "full",
+  "scene": "幼儿园接孩子",
+  "theme_id": 25,
+  "theme": "上学与回家",
+  "dialogue": [
+    {
+      "role": "parent",
+      "english": "Hey, I'm here!",
+      "ipa": "/heɪ aɪm hɪr/",
+      "chinese": "嘿，我来啦！"
+    },
+    {
+      "role": "parent",
+      "english": "I missed you. Want a hug?",
+      "ipa": "/aɪ mɪst juː wɑnt ə hʌɡ/",
+      "chinese": "我想你啦。想抱一下吗？"
+    },
+    {
+      "role": "child",
+      "english": "Yes, please.",
+      "ipa": "/jɛs pliːz/",
+      "chinese": "好呀。"
+    },
+    {
+      "role": "action",
+      "text": "孩子愿意就抱一抱；点头或伸手也可以。"
+    },
+    {
+      "role": "child",
+      "english": "Carry me, please.",
+      "ipa": "/ˈkæri miː pliːz/",
+      "chinese": "请抱着我。",
+      "cue": "带读：先抱起来，再替孩子示范这句，愿意才试一次；中文或伸手也接住。",
+      "target": true
+    },
+    {
+      "role": "parent",
+      "english": "Sure. I'll carry you.",
+      "ipa": "/ʃʊr aɪl ˈkæri juː/",
+      "chinese": "好，我抱着你。"
+    },
+    {
+      "role": "parent",
+      "english": "I'll carry your backpack.",
+      "ipa": "/aɪl ˈkæri jɚ ˈbækpæk/",
+      "chinese": "我来拿你的书包。"
+    },
+    {
+      "role": "parent",
+      "english": "Let's say goodbye.",
+      "ipa": "/lɛts seɪ ˌɡʊdˈbaɪ/",
+      "chinese": "我们说再见吧。"
+    },
+    {
+      "role": "child",
+      "english": "Bye!",
+      "ipa": "/baɪ/",
+      "chinese": "再见！"
+    },
+    {
+      "role": "action",
+      "text": "孩子愿意下来走时，在安全的位置放下他，再牵手。"
+    },
+    {
+      "role": "parent",
+      "english": "Hold my hand.",
+      "ipa": "/hoʊld maɪ hænd/",
+      "chinese": "牵着我的手。"
+    },
+    {
+      "role": "child",
+      "english": "Okay.",
+      "ipa": "/oʊˈkeɪ/",
+      "chinese": "好。"
+    },
+    {
+      "role": "parent",
+      "english": "Want some water?",
+      "ipa": "/wɑnt səm ˈwɑtɚ/",
+      "chinese": "想喝点水吗？"
+    },
+    {
+      "role": "child",
+      "english": "I want water.",
+      "ipa": "/aɪ wɑnt ˈwɑtɚ/",
+      "chinese": "我想喝水。",
+      "cue": "带读：先递水，再替孩子示范；只说“水”或指水杯也可以。",
+      "target": true
+    },
+    {
+      "role": "parent",
+      "english": "Here you go.",
+      "ipa": "/hɪr juː ɡoʊ/",
+      "chinese": "给你。"
+    },
+    {
+      "role": "action",
+      "text": "孩子愿意聊时再接下面两句；累了就跳过，先回家。"
+    },
+    {
+      "role": "parent",
+      "english": "Did you play outside today?",
+      "ipa": "/dɪd jə pleɪ ˌaʊtˈsaɪd təˈdeɪ/",
+      "chinese": "今天去外面玩了吗？"
+    },
+    {
+      "role": "child",
+      "english": "I played outside.",
+      "ipa": "/aɪ pleɪd ˌaʊtˈsaɪd/",
+      "chinese": "我在外面玩了。",
+      "cue": "只有今天确实在外面玩过才用；不用要求跟读，也可以用中文回答。"
+    },
+    {
+      "role": "parent",
+      "english": "Let's go home.",
+      "ipa": "/lɛts ɡoʊ hoʊm/",
+      "chinese": "我们回家吧。"
+    },
+    {
+      "role": "child",
+      "english": "Let's go!",
+      "ipa": "/lɛts ɡoʊ/",
+      "chinese": "走吧！"
+    }
+  ],
+  "sources": [
+    "参考《美国家庭万用亲子英文》整理版：CHAPTER03-02（L982–1005）、CHAPTER03-06（L1087–1110）、CHAPTER19-01（L4598）、CHAPTER30-01（L6396–6420）；行号非书页。",
+    "原书相关位置沿用上行；本次串联对话、条件旁白和部分接话为改写／补充，孩子回答不是实际经历，IPA另加。"
+  ],
+  "archive": {
+    "date": "2026-10-09",
+    "filename": "2026-10-09-幼儿园接孩子-01.html",
+    "sequence": 1,
+    "created_at": "2026-10-09T11:02:46.301780+08:00",
+    "image_filename": "2026-10-09-幼儿园接孩子-01.png",
+    "image_width": 1080,
+    "image_height": 3960
+  }
+}

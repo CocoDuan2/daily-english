@@ -1,0 +1,13 @@
+# Local archive state and backups
+.archive.lock
+backups/
+
+# OS and editor files
+.DS_Store
+._*
+.idea/
+.vscode/
+
+# Local secrets
+.env
+.env.*

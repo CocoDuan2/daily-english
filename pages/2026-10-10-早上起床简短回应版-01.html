@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F3EDE1">
+<title>早上起床：打招呼、再躺一会儿、起来洗脸 · Talkini亲子日常英语</title>
+<style>:root{
+  --animal-font:'Nunito','Noto Sans SC',-apple-system,'PingFang SC','Hiragino Sans GB',sans-serif;
+  /* 场景详情页专属配色：奶油莫兰迪 After（对齐 talkini-scene-recolor.html），
+     只作用于 pages/*.html 与场景 PNG；首页／主题／我的仍用 archive_scene.py 内的 APP_CSS。 */
+  --animal-primary:#2F6B58;--animal-primary-hover:#6FA79B;--animal-primary-active:#2C6759;--animal-primary-bg:#E9EFEA;--animal-primary-ink:#2C6759;
+  --animal-child-bg:#F2E2DB;--animal-child-border:#C79A88;--animal-child-text:#9C4E3C;
+  --animal-parent-bg:#DFEAE4;--animal-live-edge:#6FA79B;
+  --animal-en:#2A333B;--animal-ipa:#55636C;--animal-zh:#4A443A;
+  --animal-text:#3A342C;--animal-text-body:#4A443A;--animal-text-secondary:#5A5347;--animal-text-muted:#55636C;--animal-text-disabled:#8A8171;
+  --animal-bg:#F3EDE1;--animal-bg-content:#FFFCF6;--animal-bg-disabled:#E6DFCC;
+  --animal-border:#E6DFD0;--animal-border-hover:#D8C9A4;
+  --animal-divider:#E6DFD0;--animal-divider-mint:#D5E2DC;
+  --animal-radius-sm:12px;--animal-radius:18px;--animal-radius-lg:24px;--animal-radius-pill:50px;
+  --animal-shadow-btn:#E6DFD0;--animal-shadow-input:#E6DFD0;
+  --animal-focus-yellow:#fde24f;--animal-success:#2F6B58;--animal-success-ink:#2C6759;--animal-warning:#fde24f;--animal-error:#9C4E3C;
+  --animal-ease:cubic-bezier(.4,0,.2,1);--animal-duration-fast:.15s;--animal-duration:.25s;--animal-duration-slow:.35s;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--animal-bg);color:var(--animal-text-body);font-family:var(--animal-font);font-weight:500;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%}
+a{color:inherit;text-decoration:none}
+.icon{display:inline-flex;width:100%;height:100%;align-items:center;justify-content:center}
+.icon svg{width:100%;height:100%;display:block}
+.app{max-width:480px;margin:0 auto;min-height:100vh;background:var(--animal-bg);display:flex;flex-direction:column}
+.appbar{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:10px;padding:9px 14px;background:var(--animal-bg);border-bottom:1px solid var(--animal-border)}
+.app-back{display:inline-flex;align-items:center;gap:4px;height:34px;padding:0 12px 0 7px;border-radius:var(--animal-radius-pill);background:var(--animal-bg-content);color:var(--animal-text);font-weight:600;font-size:13.5px;border:1.5px solid var(--animal-border);flex:none;transition:all var(--animal-duration) var(--animal-ease)}
+.app-back .icon{width:18px;height:18px}
+.app-back:hover{background:var(--animal-primary-bg);border-color:var(--animal-primary)}
+.app-back:focus-visible,.tab:focus-visible{outline:3px solid var(--animal-focus-yellow);outline-offset:2px}
+.brand-text{display:flex;flex-direction:column;line-height:1.3;min-width:0}
+.brand-text strong{font-size:15.5px;font-weight:700;color:var(--animal-text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand-text small{font-size:11.5px;color:var(--animal-text-secondary)}
+.screen{flex:1;padding:12px;display:flex;flex-direction:column;gap:12px}
+.scene-card{background:var(--animal-bg-content);border:1.5px solid var(--animal-border);border-radius:var(--animal-radius-lg);overflow:hidden;width:100%;container-type:inline-size}
+.scene-header{padding:18px 18px 14px;background:var(--animal-bg-content);border-bottom:1px dashed var(--animal-border)}
+.scene-badge{display:inline-flex;align-items:center;gap:6px;margin:0;font-size:11.5px;font-weight:700;color:var(--animal-primary-ink);background:var(--animal-primary-bg);padding:4px 10px;border-radius:var(--animal-radius-pill)}
+.scene-badge .icon{width:14px;height:14px}
+.scene-english-title{margin:8px 0 0;color:var(--animal-text-secondary);font-size:13px;font-weight:800;line-height:1.35;letter-spacing:.08em;text-transform:uppercase;overflow-wrap:anywhere}
+.scene-english-title + h1{margin-top:4px}
+.scene-header h1{color:var(--animal-text);font-size:23px;line-height:1.25;font-weight:800;margin:9px 0 8px;overflow-wrap:anywhere}
+.intent{margin:0;line-height:1.55;font-size:14px;color:var(--animal-text-body)}
+.scene-content{padding:0}
+.dialogue{list-style:none;padding:0;margin:0;display:grid;gap:0;background:transparent}
+.turn{position:relative;padding:12px 18px 12px 15px;border:0;border-left:3px solid transparent;border-bottom:1px dashed var(--animal-divider);border-radius:0;background:transparent;min-width:0}
+.turn:last-child{border-bottom:0}
+.turn.parent{background:var(--animal-parent-bg);border-bottom-color:var(--animal-divider-mint)}
+.turn.child{background:var(--animal-child-bg);border-bottom-color:var(--animal-child-border);border-left-color:var(--animal-child-border)}
+.turn.target{border-left-color:var(--animal-live-edge)}
+.turn-meta{display:flex;align-items:center;gap:6px;margin-bottom:4px}
+.role-label{color:var(--animal-text-muted);font-size:11.5px;font-weight:600}
+.turn.parent .role-label{color:var(--animal-primary-ink)}
+.turn.child .role-label{color:var(--animal-child-text)}
+.target-label{color:#fff;background:var(--animal-primary);font-size:10px;font-weight:700;padding:1px 7px;border-radius:999px}
+.turn p{margin:0;overflow-wrap:anywhere}
+.turn-line{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);column-gap:10px;row-gap:6px;align-items:start}
+.turn-line > p{min-width:0}
+.turn-line .chinese{grid-column:1 / -1}
+.turn .english{color:var(--animal-en);font-size:20px;font-weight:600;line-height:1.35}
+.turn .ipa{font-family:'Nunito','Helvetica Neue',Arial,'DejaVu Sans',sans-serif;color:var(--animal-ipa);font-size:16px;line-height:1.4;font-weight:500}
+.turn .chinese{color:var(--animal-zh);font-size:15px;line-height:1.5}
+.turn .cue{color:var(--animal-text-muted);font-size:12px;line-height:1.5;margin-top:6px;padding-top:6px;border-top:1px dashed var(--animal-border)}
+.action-cue{color:var(--animal-text-muted);font-size:12.5px;line-height:1.55;padding:6px 18px;border-bottom:1px dashed var(--animal-divider);overflow-wrap:anywhere}
+.action-cue:last-child{border-bottom:0}
+.tabbar{position:sticky;bottom:0;z-index:5;display:flex;background:var(--animal-bg-content);border-top:1.5px solid var(--animal-border);padding:6px 8px calc(6px + env(safe-area-inset-bottom))}
+.tab{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;padding:7px 0;border-radius:var(--animal-radius-sm);font-size:11.5px;font-weight:600;color:var(--animal-text-secondary);transition:all var(--animal-duration) var(--animal-ease)}
+.tab .icon{width:22px;height:22px}
+.tab:hover{background:var(--animal-primary-bg);color:var(--animal-text)}
+.tab.active{color:var(--animal-primary-ink)}
+.scene-actions{padding:0 12px 12px;display:flex}
+.done-toggle{display:inline-flex;align-items:center;justify-content:center;gap:6px;width:100%;min-height:46px;padding:0 18px;border-radius:var(--animal-radius-pill);background:var(--animal-primary-bg);border:1.5px solid var(--animal-border);color:var(--animal-text);font-family:inherit;font-size:15px;font-weight:700;cursor:pointer;transition:all var(--animal-duration) var(--animal-ease)}
+.done-toggle .icon{width:20px;height:20px;flex:none}
+.done-toggle:hover{border-color:var(--animal-primary)}
+.done-toggle:active{transform:translateY(1px)}
+.done-toggle:focus-visible{outline:3px solid var(--animal-focus-yellow);outline-offset:2px}
+.done-toggle.is-done{background:var(--animal-primary-bg);border-color:var(--animal-success);color:var(--animal-success-ink)}
+/* Legacy tables are supported only when re-rendering old archives. */
+.table-scroll{width:100%;overflow-x:auto;overscroll-behavior-x:contain;border-radius:12px}
+table{border-collapse:separate;border-spacing:0;width:100%;table-layout:fixed;border:1.5px solid var(--animal-border);border-radius:12px;overflow:hidden;font-size:16px;line-height:1.65}
+th{text-align:left;color:var(--animal-text);font-size:14px;font-weight:700;background:var(--animal-primary-bg);padding:12px 13px;border-bottom:1.5px solid var(--animal-border)}
+td{padding:15px 13px;vertical-align:top;border-bottom:1px solid var(--animal-border);overflow-wrap:anywhere;color:var(--animal-text-body)}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:nth-child(even){background:rgba(120,92,32,.05)}
+td.english{font-size:22px;font-weight:600;line-height:1.5;color:var(--animal-en)}
+td.ipa{font-family:'Nunito','Helvetica Neue',Arial,'DejaVu Sans',sans-serif;color:var(--animal-ipa);font-size:18px;line-height:1.6;font-weight:500}
+.scene-section{margin-top:26px}
+.section-title{display:flex;gap:12px;align-items:center;margin:0 0 14px;color:var(--animal-text);font-size:20px;font-weight:700}
+.section-number{display:inline-flex;flex-shrink:0;justify-content:center;align-items:center;width:30px;height:30px;background:var(--animal-primary-bg);color:var(--animal-primary-ink);border-radius:10px;font-size:13px;font-weight:700}
+@container (max-width:1000px){table{min-width:920px}}
+@container (max-width:400px){
+  .scene-header{padding:16px 14px 12px}
+  .scene-header h1{font-size:21px}
+  .turn{padding:10px 14px 10px 11px}
+  .action-cue{padding:6px 14px}
+  .turn-line{column-gap:8px}
+}
+.png-export .table-scroll{overflow:visible}
+.png-export table{min-width:0}
+body.png-export .appbar,body.png-export .tabbar,body.png-export .scene-actions{display:none!important}
+body.png-export .app{max-width:none}
+body.png-export .screen{padding:0}
+body.png-export .scene-card{border:0;border-radius:0}
+@media print{
+  .tabbar,.appbar,.scene-actions{display:none}
+  body{background:#fff}
+  .scene-card{width:100%;border:0;border-radius:0}
+  .table-scroll{overflow:visible}
+  table{min-width:0}
+  thead{display:table-header-group}
+  tr,.turn{break-inside:avoid}
+}
+.scene-card.legacy-layout{width:100%}
+body.legacy-layout .app{max-width:1120px}
+</style>
+</head>
+<body class="dialogue-layout">
+<div class="app">
+<header class="appbar">
+<a class="app-back" href="../themes/01-morning-routine.html"><span class="icon" aria-hidden="true"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#00214d" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M29 12 L 17 24 L 29 36" fill="none" stroke="#00214d" stroke-width="3.5"/>
+</svg></span><span>返回</span></a>
+<div class="brand-text"><strong>起床与早晨</strong></div>
+</header>
+<main class="screen">
+<article id="scene-card" class="scene-card dialogue-layout">
+<header class="scene-header">
+<p class="scene-badge"><span class="icon" aria-hidden="true"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#00214d" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="24" cy="24" r="10" fill="#fde24f"/>
+<path d="M24 4 L24 10" stroke="#00214d"/>
+<path d="M24 38 L24 44" stroke="#00214d"/>
+<path d="M4 24 L10 24" stroke="#00214d"/>
+<path d="M38 24 L44 24" stroke="#00214d"/>
+<path d="M10 10 L14 14" stroke="#00214d"/>
+<path d="M34 34 L38 38" stroke="#00214d"/>
+<path d="M10 38 L14 34" stroke="#00214d"/>
+<path d="M34 14 L38 10" stroke="#00214d"/>
+</svg></span><span>场景对话与跟读</span></p>
+<p class="scene-english-title">Good Morning, Time to Wake Up</p>
+<h1>早上起床：打招呼、再躺一会儿、起来洗脸</h1>
+<p class="intent">说自己还困。</p>
+</header>
+<div class="scene-content"><ol class="dialogue" aria-label="亲子场景对话"><li class="turn parent"><div class="turn-meta"><span class="role-label">家长</span></div><div class="turn-line"><p class="english" lang="en-US">Good morning!</p><p class="ipa">/ɡʊd ˈmɔrnɪŋ/</p><p class="chinese">早上好！</p></div></li><li class="turn child"><div class="turn-meta"><span class="role-label">孩子可能说</span></div><div class="turn-line"><p class="english" lang="en-US">Good morning!</p><p class="ipa">/ɡʊd ˈmɔrnɪŋ/</p><p class="chinese">早上好！</p></div></li><li class="turn parent"><div class="turn-meta"><span class="role-label">家长</span></div><div class="turn-line"><p class="english" lang="en-US">Time to wake up!</p><p class="ipa">/taɪm tə weɪk ʌp/</p><p class="chinese">该醒来啦！</p></div></li><li class="turn child target"><div class="turn-meta"><span class="role-label">孩子可能说</span><span class="target-label">跟读</span></div><div class="turn-line"><p class="english" lang="en-US">I&#x27;m still sleepy.</p><p class="ipa">/aɪm stɪl ˈsliːpi/</p><p class="chinese">我还困呢。</p></div><p class="cue">先接住困意，再替孩子示范这句，愿意才跟一次；只说“困”或揉眼睛也可以。</p></li><li class="turn parent"><div class="turn-meta"><span class="role-label">家长</span></div><div class="turn-line"><p class="english" lang="en-US">Want to sleep more?</p><p class="ipa">/wɑnt tə sliːp mɔr/</p><p class="chinese">还想再睡一会儿吗？</p></div></li><li class="turn child"><div class="turn-meta"><span class="role-label">孩子可能说</span></div><div class="turn-line"><p class="english" lang="en-US">Yes, please.</p><p class="ipa">/jɛs pliːz/</p><p class="chinese">想呀。</p></div><p class="cue">点头或用中文回答也可以，不要求孩子说整句。</p></li><li class="turn parent"><div class="turn-meta"><span class="role-label">家长</span></div><div class="turn-line"><p class="english" lang="en-US">Just five more minutes.</p><p class="ipa">/dʒʌst faɪv mɔr ˈmɪnɪts/</p><p class="chinese">那就再休息五分钟。</p></div></li><li class="action-cue">稍等一会儿，孩子愿意互动时再继续；仍然很困就跳过聊天，先照护。</li><li class="turn parent"><div class="turn-meta"><span class="role-label">家长</span></div><div class="turn-line"><p class="english" lang="en-US">Did you sleep well?</p><p class="ipa">/dɪd juː sliːp wɛl/</p><p class="chinese">睡得好吗？</p></div></li><li class="turn child"><div class="turn-meta"><span class="role-label">孩子可能说</span></div><div class="turn-line"><p class="english" lang="en-US">Yes. I slept well.</p><p class="ipa">/jɛs aɪ slɛpt wɛl/</p><p class="chinese">嗯，我睡得很好。</p></div></li><li class="turn child"><div class="turn-meta"><span class="role-label">孩子可能说</span></div><div class="turn-line"><p class="english" lang="en-US">I&#x27;m awake.</p><p class="ipa">/aɪm əˈweɪk/</p><p class="chinese">我醒啦。</p></div></li><li class="turn parent"><div class="turn-meta"><span class="role-label">家长</span></div><div class="turn-line"><p class="english" lang="en-US">Stretch your body.</p><p class="ipa">/strɛtʃ jɚ ˈbɑdi/</p><p class="chinese">伸个懒腰吧。</p></div></li><li class="action-cue">一起伸个懒腰，等孩子准备好，大人照看着稳稳下床。</li><li class="turn parent"><div class="turn-meta"><span class="role-label">家长</span></div><div class="turn-line"><p class="english" lang="en-US">Let&#x27;s go wash your face.</p><p class="ipa">/lɛts ɡoʊ wɑʃ jɚ feɪs/</p><p class="chinese">我们去洗脸吧。</p></div></li></ol></div>
+</article>
+<div class="scene-actions">
+<button type="button" class="done-toggle" data-done-scene="2026-10-10-早上起床简短回应版-01.html" aria-pressed="false">
+<span class="icon" aria-hidden="true"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#00214d" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="24" cy="24" r="17" fill="none" stroke="#00214d" stroke-width="3.5"/>
+<path d="M15 24.5 L21 30.5 L32 18.5" fill="none" stroke="#0b8577" stroke-width="4"/>
+</svg></span><span data-done-label>标记为完成</span>
+</button>
+</div>
+</main>
+<nav class="tabbar"><a class="tab" href="../index.html"><span class="icon" aria-hidden="true"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#00214d" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M6 24 L24 8 L42 24" fill="#e86a86"/>
+<path d="M10 22 L10 40 L38 40 L38 22" fill="#fde24f"/>
+<rect x="20" y="28" width="8" height="12" fill="#00214d"/>
+<circle cx="16" cy="30" r="1.5" fill="#00214d"/>
+<circle cx="32" cy="30" r="1.5" fill="#00214d"/>
+</svg></span><span>首页</span></a><a class="tab active" href="../themes.html"><span class="icon" aria-hidden="true"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#00214d" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+<rect x="6" y="6" width="16" height="16" rx="3.5" fill="#14a08f"/>
+<rect x="26" y="6" width="16" height="16" rx="3.5" fill="#fde24f"/>
+<rect x="6" y="26" width="16" height="16" rx="3.5" fill="#e86a86"/>
+<rect x="26" y="26" width="16" height="16" rx="3.5" fill="#00214d"/>
+</svg></span><span>主题</span></a><a class="tab" href="../mine.html"><span class="icon" aria-hidden="true"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#00214d" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="15" cy="14" r="6" fill="#00214d"/>
+<path d="M5 34 C 5 26 9 23 15 23 C 19 23 22 24 24 26 L 24 40 L 8 40 Z" fill="#00214d"/>
+<circle cx="29" cy="18" r="7.5" fill="#e86a86"/>
+<path d="M14 42 C 14 33 21 30 29 30 C 37 30 43 33 43 42 Z" fill="#14a08f"/>
+<circle cx="26.5" cy="18" r="1.5" fill="#00214d"/>
+<circle cx="31.5" cy="18" r="1.5" fill="#00214d"/>
+<path d="M26 22 Q 29 24.5 32 22" stroke="#00214d" fill="none"/>
+</svg></span><span>我的</span></a></nav>
+</div>
+<script>/* 本地离线进度：已完成场景存在浏览器 localStorage，不上传。 */
+(function () {
+  'use strict';
+  var KEY = 'tde.v1.done';
+  function read() {
+    try {
+      var raw = window.localStorage.getItem(KEY);
+      if (!raw) return {};
+      var obj = JSON.parse(raw);
+      return obj && typeof obj === 'object' ? obj : {};
+    } catch (e) { return {}; }
+  }
+  function write(obj) {
+    try { window.localStorage.setItem(KEY, JSON.stringify(obj)); } catch (e) {}
+  }
+  function esc(v) {
+    return String(v).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+
+  /* 场景页：完成开关 */
+  var toggle = document.querySelector('[data-done-scene]');
+  if (toggle) {
+    var file = toggle.getAttribute('data-done-scene');
+    var label = toggle.querySelector('[data-done-label]');
+    var paint = function () {
+      var on = !!read()[file];
+      toggle.classList.toggle('is-done', on);
+      toggle.setAttribute('aria-pressed', on ? 'true' : 'false');
+      if (label) label.textContent = on ? '已完成' : '标记为完成';
+    };
+    toggle.addEventListener('click', function () {
+      var obj = read();
+      if (obj[file]) delete obj[file]; else obj[file] = Date.now();
+      write(obj);
+      paint();
+    });
+    paint();
+    return;
+  }
+
+  /* 应用页：按完成情况刷新首页、主题、我的 */
+  var dataEl = document.getElementById('tde-data');
+  if (!dataEl) return;
+  var data, done;
+  try { data = JSON.parse(dataEl.textContent); } catch (e) { return; }
+  if (!data) return;
+  done = read();
+  var themes = data.themes || [];
+  var scenes = data.scenes || [];
+  var icons = data.icons || {};
+  var root = data.root || '';
+  var byId = {};
+  themes.forEach(function (t) { byId[t.id] = t; });
+
+  var completed = scenes.filter(function (s) { return done[s.file]; })
+    .map(function (s) { return { s: s, ts: Number(done[s.file]) || 0 }; })
+    .sort(function (a, b) { return b.ts - a.ts; });
+  var completedScenes = completed.map(function (c) { return c.s; });
+
+  /* 今日推荐：最早加入、尚未完成的一条；没有场景时先按日期给一个主题。
+     先在前面算好，供首页今日卡与空状态按钮共用同一个入口。 */
+  var nextScene = null;
+  for (var nsi = scenes.length - 1; nsi >= 0; nsi--) {
+    if (!done[scenes[nsi].file]) { nextScene = scenes[nsi]; break; }
+  }
+  /* 还没有任何场景时，用「距 1970-01-01 的天数」轮换一个待生成的主题，
+     和服务端 starter_recommendation() 用同一套算法。 */
+  var dayIndex = (function () {
+    var stamp = String(data.today || '').split('-');
+    if (stamp.length === 3) return Math.floor(Date.UTC(+stamp[0], +stamp[1] - 1, +stamp[2]) / 86400000);
+    return Math.floor(Date.now() / 86400000);
+  })();
+  var starterTheme = (!scenes.length && themes.length) ? themes[dayIndex % themes.length] : null;
+  var todayHref = root + 'themes.html';
+  if (nextScene) todayHref = root + 'pages/' + encodeURIComponent(nextScene.file);
+  else if (starterTheme) todayHref = root + 'themes/' + starterTheme.page;
+
+  var counts = {};
+  completed.forEach(function (c) { counts[c.s.theme] = (counts[c.s.theme] || 0) + 1; });
+  var covered = themes.filter(function (t) { return counts[t.id]; }).length;
+  /* 每个主题已归档的场景数，用来兜底分母 */
+  var archived = {};
+  scenes.forEach(function (s) { archived[s.theme] = (archived[s.theme] || 0) + 1; });
+  function themeTotal(theme, doneCount) {
+    return Math.max(archived[theme.id] || 0, doneCount || 0);
+  }
+
+  function setStat(name, value) {
+    var nodes = document.querySelectorAll('[data-stat="' + name + '"]');
+    for (var i = 0; i < nodes.length; i++) nodes[i].textContent = value;
+  }
+  setStat('scenes', completed.length);
+  setStat('themes', covered);
+  var days = {};
+  completed.forEach(function (c) { days[c.s.date] = 1; });
+  setStat('days', Object.keys(days).length);
+
+  function listItem(s) {
+    var meta = esc(s.date) + (s.targets ? ' · 跟读 ' + s.targets + ' 条' : '');
+    return '<li class="scene-item">' +
+      '<a class="scene-link" href="' + root + 'pages/' + encodeURIComponent(s.file) + '">' +
+      '<span class="scene-theme">' + esc(s.themeName) + '</span>' +
+      '<strong>' + esc(s.title) + '</strong>' +
+      '<span class="scene-intent">' + esc(s.intent) + '</span>' +
+      '<span class="scene-meta">' + meta + '</span></a></li>';
+  }
+  /* 主题卡片：已完成数 */
+  var cards = document.querySelectorAll('[data-theme-card]');
+  for (var i = 0; i < cards.length; i++) {
+    var id = Number(cards[i].getAttribute('data-theme-card'));
+    var theme = null;
+    for (var j = 0; j < themes.length; j++) if (themes[j].id === id) theme = themes[j];
+    var badge = cards[i].querySelector('[data-theme-count]');
+    if (!theme || !badge) continue;
+    var c = counts[id] || 0;
+    var total = themeTotal(theme, c);
+    /* 没有完成记录时，也按已归档场景数显示，避免有场景却显示“未开始” */
+    if (c > 0) badge.textContent = '已练 ' + c + '/' + total;
+    else badge.textContent = total ? total + ' 个场景' : '暂无场景';
+    badge.classList.toggle('has', total > 0);
+  }
+
+  /* 我的：每个主题进度条 */
+  var rows = document.querySelectorAll('[data-progress]');
+  for (var r = 0; r < rows.length; r++) {
+    var pid = Number(rows[r].getAttribute('data-progress'));
+    var pt = null;
+    for (var k = 0; k < themes.length; k++) if (themes[k].id === pid) pt = themes[k];
+    if (!pt) continue;
+    var pc = counts[pid] || 0;
+    var pTotal = themeTotal(pt, pc);
+    var count = rows[r].querySelector('[data-progress-count]');
+    if (count) {
+      count.textContent = pTotal ? pc + '/' + pTotal : '暂无场景';
+      count.classList.toggle('has', pc > 0);
+    }
+    var bar = rows[r].querySelector('.progress-bar > span');
+    if (bar) bar.style.width = (pTotal ? Math.round(pc / pTotal * 100) : 0) + '%';
+  }
+
+  /* 首页：最近练习（最多 3 条）；还没有记录时给一个紧凑空状态 + 直达按钮。 */
+  var recentEl = document.getElementById('home-recent');
+  if (recentEl) {
+    if (completedScenes.length) {
+      recentEl.innerHTML = completedScenes.slice(0, 3).map(listItem).join('');
+    } else {
+      recentEl.innerHTML =
+        '<li class="home-empty">' + (icons.clock || '') +
+        '<span class="home-empty-txt">还没有完成记录<br>练完一幕后会自动收在这里</span>' +
+        '<a class="ghost" href="' + todayHref + '">现在开始</a></li>';
+    }
+  }
+
+  /* 首页：今日场景卡。分类 chip + 今日推荐 + 场景按钮 + 前 1–2 句台词预览。 */
+  var recEl = document.getElementById('today-body');
+  if (recEl) {
+    function recCard(theme, href, english, chinese, minutes, preview) {
+      var pv = (preview || []).map(function (line, i) {
+        return '<div class="rec-pv-li"><b>' + (i + 1) + '</b><span>' + esc(line) + '</span></div>';
+      }).join('');
+      return '<div class="rec-line">' +
+        '<span class="rec-cat">' + esc(theme.name) + '</span>' +
+        '<span class="rec-tag">今日推荐</span>' +
+        (minutes ? '<span class="rec-time">约 ' + minutes + ' 分钟</span>' : '') +
+        '</div>' +
+        '<a class="rec-scene" href="' + href + '" aria-label="打开场景：' + esc(chinese) + '">' +
+        (icons[theme.icon] ? '<span class="icon rec-icon" aria-hidden="true">' + icons[theme.icon] + '</span>' : '') +
+        '<span class="rec-titles">' +
+        (english ? '<span class="rec-en">' + esc(english) + '</span>' : '') +
+        '<span class="rec-zh">' + esc(chinese) + '</span>' +
+        '</span>' +
+        '<span class="rec-go" aria-hidden="true">' + (icons['chevron-left'] || '') + '</span>' +
+        '</a>' +
+        (pv ? '<div class="rec-preview" aria-hidden="true">' + pv + '</div>' : '');
+    }
+    if (nextScene) {
+      var sceneTheme = byId[nextScene.theme] || themes[0];
+      recEl.innerHTML = recCard(sceneTheme,
+        root + 'pages/' + encodeURIComponent(nextScene.file),
+        nextScene.englishTitle, nextScene.scene || nextScene.title,
+        nextScene.minutes, nextScene.preview);
+    } else if (scenes.length) {
+      /* 所有场景都练过了 */
+      var allTheme = byId[scenes[0].theme] || themes[0];
+      recEl.innerHTML = recCard(allTheme, root + 'mine.html', '', '这些场景都练过了', null, []);
+    } else if (starterTheme) {
+      recEl.innerHTML = recCard(starterTheme, root + 'themes/' + starterTheme.page, '', '今天挑一个新场景', null, []);
+    }
+  }
+
+  /* 首页：明日预告。只显示下一条真实场景；没有时只留「明日预告 · 主题名」。 */
+  var tmrEl = document.getElementById('home-tomorrow');
+  if (tmrEl) {
+    function tmrCard(themeName, href, name, english) {
+      var nameHtml = name
+        ? '<span class="tmr-name"><span>' + esc(name) + '</span>' +
+          (english ? '<span class="tmr-en">' + esc(english) + '</span>' : '') +
+          '</span>'
+        : '';
+      return '<li class="tomorrow-card">' +
+        '<a class="tmr-link" href="' + href + '" aria-label="明日预告：' + esc(name || themeName) + '">' +
+        '<span class="icon tmr-icon" aria-hidden="true">' + (icons.chat || '') + '</span>' +
+        '<span class="tmr-txt">' +
+        '<span class="tmr-label">明日预告 · ' + esc(themeName) + '</span>' +
+        nameHtml +
+        '</span></a></li>';
+    }
+    var tmrScene = null;
+    var seenToday = false;
+    for (var tmi = scenes.length - 1; tmi >= 0; tmi--) {
+      if (done[scenes[tmi].file]) continue;
+      if (!seenToday) { seenToday = true; continue; }
+      tmrScene = scenes[tmi];
+      break;
+    }
+    if (tmrScene) {
+      var tmrTheme = byId[tmrScene.theme] || themes[0];
+      tmrEl.innerHTML = tmrCard(tmrTheme.name, root + 'pages/' + encodeURIComponent(tmrScene.file),
+        tmrScene.scene || tmrScene.title, tmrScene.englishTitle);
+    } else if (themes.length) {
+      var nextTheme = themes[(dayIndex + 1) % themes.length];
+      tmrEl.innerHTML = tmrCard(nextTheme.name, root + 'themes/' + nextTheme.page, '', '');
+    }
+  }
+})();
+</script>
+</body>
+</html>

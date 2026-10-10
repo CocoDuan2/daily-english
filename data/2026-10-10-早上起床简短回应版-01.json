@@ -1,0 +1,108 @@
+{
+  "title": "早上起床：打招呼、再躺一会儿、起来洗脸",
+  "intent": "说自己还困。",
+  "mode": "full",
+  "scene": "早上起床简短回应版",
+  "english_title": "Good Morning, Time to Wake Up",
+  "date": "2026-10-10",
+  "theme_id": 1,
+  "theme": "起床与早晨",
+  "dialogue": [
+    {
+      "role": "parent",
+      "english": "Good morning!",
+      "ipa": "/ɡʊd ˈmɔrnɪŋ/",
+      "chinese": "早上好！"
+    },
+    {
+      "role": "child",
+      "english": "Good morning!",
+      "ipa": "/ɡʊd ˈmɔrnɪŋ/",
+      "chinese": "早上好！"
+    },
+    {
+      "role": "parent",
+      "english": "Time to wake up!",
+      "ipa": "/taɪm tə weɪk ʌp/",
+      "chinese": "该醒来啦！"
+    },
+    {
+      "role": "child",
+      "english": "I'm still sleepy.",
+      "ipa": "/aɪm stɪl ˈsliːpi/",
+      "chinese": "我还困呢。",
+      "cue": "先接住困意，再替孩子示范这句，愿意才跟一次；只说“困”或揉眼睛也可以。",
+      "target": true
+    },
+    {
+      "role": "parent",
+      "english": "Want to sleep more?",
+      "ipa": "/wɑnt tə sliːp mɔr/",
+      "chinese": "还想再睡一会儿吗？"
+    },
+    {
+      "role": "child",
+      "english": "Yes, please.",
+      "ipa": "/jɛs pliːz/",
+      "chinese": "想呀。",
+      "cue": "点头或用中文回答也可以，不要求孩子说整句。"
+    },
+    {
+      "role": "parent",
+      "english": "Just five more minutes.",
+      "ipa": "/dʒʌst faɪv mɔr ˈmɪnɪts/",
+      "chinese": "那就再休息五分钟。"
+    },
+    {
+      "role": "action",
+      "text": "稍等一会儿，孩子愿意互动时再继续；仍然很困就跳过聊天，先照护。"
+    },
+    {
+      "role": "parent",
+      "english": "Did you sleep well?",
+      "ipa": "/dɪd juː sliːp wɛl/",
+      "chinese": "睡得好吗？"
+    },
+    {
+      "role": "child",
+      "english": "Yes. I slept well.",
+      "ipa": "/jɛs aɪ slɛpt wɛl/",
+      "chinese": "嗯，我睡得很好。"
+    },
+    {
+      "role": "child",
+      "english": "I'm awake.",
+      "ipa": "/aɪm əˈweɪk/",
+      "chinese": "我醒啦。"
+    },
+    {
+      "role": "parent",
+      "english": "Stretch your body.",
+      "ipa": "/strɛtʃ jɚ ˈbɑdi/",
+      "chinese": "伸个懒腰吧。"
+    },
+    {
+      "role": "action",
+      "text": "一起伸个懒腰，等孩子准备好，大人照看着稳稳下床。"
+    },
+    {
+      "role": "parent",
+      "english": "Let's go wash your face.",
+      "ipa": "/lɛts ɡoʊ wɑʃ jɚ feɪs/",
+      "chinese": "我们去洗脸吧。"
+    }
+  ],
+  "sources": [
+    "《美国家庭万用亲子英文英语8000句》本地整理版：台词3、5、7、10、11为 CHAPTER01-01 L135、L142、L146、L149、L161 的原书英文；台词4、8为 CHAPTER01-02 L176、L165 的原书英文。台词4、10仅规范非标准撇号；中文按现场意思解释，IPA新增。",
+    "台词1–2据 CHAPTER01-02 L164 去掉特定称谓；台词12据 CHAPTER01-03 L184 改为一起去洗脸的邀请；台词6为简短回应补充；台词9按用户指定改为 Yes. I slept well.，为对原书 L165 问句的回应补写，不冒充原句。依用户反馈保留12条台词、1条可选跟读。"
+  ],
+  "archive": {
+    "date": "2026-10-10",
+    "filename": "2026-10-10-早上起床简短回应版-01.html",
+    "sequence": 1,
+    "created_at": "2026-10-10T11:17:10.228558+08:00",
+    "image_filename": "2026-10-10-早上起床简短回应版-01.png",
+    "image_width": 1080,
+    "image_height": 2866
+  }
+}
