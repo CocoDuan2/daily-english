@@ -1,0 +1,127 @@
+{
+  "title": "跑起来，放风筝",
+  "intent": "表达自己想试一试。",
+  "mode": "full",
+  "scene": "放风筝",
+  "english_title": "Flying a Kite",
+  "date": "2026-10-10",
+  "theme_id": 21,
+  "theme": "公园与户外运动",
+  "dialogue": [
+    {
+      "role": "action",
+      "text": "在开阔的空地上，孩子拿着线轮跑，家长帮忙把风筝放起来，在旁照看。"
+    },
+    {
+      "role": "parent",
+      "english": "It's windy today. Let's fly a kite!",
+      "ipa": "/ɪts ˈwɪndi təˈdeɪ lɛts flaɪ ə kaɪt/",
+      "chinese": "今天有风。我们来放风筝吧！"
+    },
+    {
+      "role": "child",
+      "english": "I want to try!",
+      "ipa": "/aɪ wɑnt tə traɪ/",
+      "chinese": "我想试试！",
+      "cue": "孩子伸手想试时，先帮忙准备，再示范这句；愿意就跟一次。",
+      "target": true
+    },
+    {
+      "role": "parent",
+      "english": "Hold on to the reel.",
+      "ipa": "/hoʊld ɑn tə ðə riːl/",
+      "chinese": "拿好线轮。"
+    },
+    {
+      "role": "child",
+      "english": "Like this?",
+      "ipa": "/laɪk ðɪs/",
+      "chinese": "这样吗？"
+    },
+    {
+      "role": "parent",
+      "english": "Yes! I'll hold the kite.",
+      "ipa": "/jɛs aɪl hoʊld ðə kaɪt/",
+      "chinese": "对！我来拿着风筝。"
+    },
+    {
+      "role": "parent",
+      "english": "Ready? Start running!",
+      "ipa": "/ˈrɛdi stɑrt ˈrʌnɪŋ/",
+      "chinese": "准备好了吗？跑起来！"
+    },
+    {
+      "role": "action",
+      "text": "孩子往前跑，家长松开风筝，让它升起来。"
+    },
+    {
+      "role": "child",
+      "english": "It's flying!",
+      "ipa": "/ɪts ˈflaɪɪŋ/",
+      "chinese": "它飞起来啦！"
+    },
+    {
+      "role": "parent",
+      "english": "Keep running! It's going up!",
+      "ipa": "/kiːp ˈrʌnɪŋ ɪts ˈɡoʊɪŋ ʌp/",
+      "chinese": "继续跑！它飞上去啦！"
+    },
+    {
+      "role": "child",
+      "english": "Wow! So high!",
+      "ipa": "/waʊ soʊ haɪ/",
+      "chinese": "哇！好高呀！"
+    },
+    {
+      "role": "action",
+      "text": "风筝飞稳、可以停下时，家长提醒孩子。"
+    },
+    {
+      "role": "parent",
+      "english": "You can stop running now.",
+      "ipa": "/juː kən stɑp ˈrʌnɪŋ naʊ/",
+      "chinese": "现在可以停下来，不用跑啦。"
+    },
+    {
+      "role": "child",
+      "english": "I did it!",
+      "ipa": "/aɪ dɪd ɪt/",
+      "chinese": "我做到啦！"
+    },
+    {
+      "role": "parent",
+      "english": "Look how high it's flying!",
+      "ipa": "/lʊk haʊ haɪ ɪts ˈflaɪɪŋ/",
+      "chinese": "看，它飞得多高呀！"
+    },
+    {
+      "role": "action",
+      "text": "玩了一会儿，家长提醒孩子收线，必要时在旁协助。"
+    },
+    {
+      "role": "parent",
+      "english": "Let's reel it in.",
+      "ipa": "/lɛts riːl ɪt ɪn/",
+      "chinese": "我们把线收回来吧。"
+    },
+    {
+      "role": "child",
+      "english": "Okay!",
+      "ipa": "/oʊˈkeɪ/",
+      "chinese": "好！"
+    }
+  ],
+  "sources": [
+    "本书检索：用户提供《美国家庭万用亲子英文英语8000句》本地整理版 CHAPTER21-01 L4863–L4873、CHAPTER28-01 L6026–L6051；本次以 kite／风筝 检索未定位到对应放风筝句，不据此断言全书没有。",
+    "补充：用户提供的放风筝表达，按孩子持线轮跑、家长放开风筝的现场意图整理并经用户确认；本段不作为本书原句。最终孩子收尾为 Okay!，非 I'll help!；IPA与中文为新增参考。"
+  ],
+  "archive": {
+    "date": "2026-10-10",
+    "filename": "2026-10-10-放风筝-01.html",
+    "sequence": 1,
+    "created_at": "2026-10-10T17:10:07.630130+08:00",
+    "image_filename": "2026-10-10-放风筝-01.png",
+    "image_width": 1080,
+    "image_height": 3858
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "title": "玩滑板车",
+  "intent": "让家长看看自己滑得怎么样。",
+  "mode": "full",
+  "scene": "玩滑板车",
+  "english_title": "Riding Your Scooter",
+  "date": "2026-10-10",
+  "theme_id": 21,
+  "theme": "公园与户外运动",
+  "dialogue": [
+    {
+      "role": "action",
+      "text": "在平坦、远离车流的空地上玩，家长在旁边照看。"
+    },
+    {
+      "role": "parent",
+      "english": "Do you want to ride your scooter?",
+      "ipa": "/duː juː wɑnt tə raɪd jʊr ˈskuːtɚ/",
+      "chinese": "你想玩滑板车吗？"
+    },
+    {
+      "role": "child",
+      "english": "Yes, please!",
+      "ipa": "/jɛs pliːz/",
+      "chinese": "想！"
+    },
+    {
+      "role": "parent",
+      "english": "Let's put your helmet on first.",
+      "ipa": "/lɛts pʊt jʊr ˈhɛlmət ɑn fɝst/",
+      "chinese": "我们先把头盔戴好。"
+    },
+    {
+      "role": "action",
+      "text": "帮孩子戴好头盔，扣好扣子。"
+    },
+    {
+      "role": "child",
+      "english": "I'm ready!",
+      "ipa": "/aɪm ˈrɛdi/",
+      "chinese": "我准备好啦！"
+    },
+    {
+      "role": "parent",
+      "english": "Hold the handlebars with both hands.",
+      "ipa": "/hoʊld ðə ˈhændəlˌbɑrz wɪð boʊθ hændz/",
+      "chinese": "两只手握住车把。"
+    },
+    {
+      "role": "parent",
+      "english": "Put one foot on the scooter.",
+      "ipa": "/pʊt wʌn fʊt ɑn ðə ˈskuːtɚ/",
+      "chinese": "把一只脚放在滑板车上。"
+    },
+    {
+      "role": "child",
+      "english": "Like this?",
+      "ipa": "/laɪk ðɪs/",
+      "chinese": "这样吗？"
+    },
+    {
+      "role": "parent",
+      "english": "Yes! Now push off with your other foot.",
+      "ipa": "/jɛs naʊ pʊʃ ɔf wɪð jʊr ˈʌðɚ fʊt/",
+      "chinese": "对！现在用另一只脚蹬地往前滑。"
+    },
+    {
+      "role": "child",
+      "english": "Look at me!",
+      "ipa": "/lʊk æt miː/",
+      "chinese": "看我！",
+      "cue": "孩子想展示时，先看、先回应，再替孩子示范这句；愿意就跟一次。",
+      "target": true
+    },
+    {
+      "role": "parent",
+      "english": "You're doing it! Nice and slow.",
+      "ipa": "/jʊr ˈduːɪŋ ɪt naɪs ən sloʊ/",
+      "chinese": "你滑起来啦！慢慢来。"
+    },
+    {
+      "role": "action",
+      "text": "滑了一小段，家长在旁协助孩子慢慢停稳。"
+    },
+    {
+      "role": "parent",
+      "english": "Slow down. Let's stop here.",
+      "ipa": "/sloʊ daʊn lɛts stɑp hɪr/",
+      "chinese": "慢一点。我们在这里停下来吧。"
+    },
+    {
+      "role": "child",
+      "english": "I did it!",
+      "ipa": "/aɪ dɪd ɪt/",
+      "chinese": "我做到啦！"
+    },
+    {
+      "role": "parent",
+      "english": "Let's take a little break.",
+      "ipa": "/lɛts teɪk ə ˈlɪtəl breɪk/",
+      "chinese": "我们休息一会儿吧。"
+    },
+    {
+      "role": "child",
+      "english": "Okay!",
+      "ipa": "/oʊˈkeɪ/",
+      "chinese": "好！"
+    }
+  ],
+  "sources": [
+    "改写／适配：用户提供《美国家庭万用亲子英文英语8000句》本地整理版 CHAPTER13-07 L3656–L3681（骑行邀请、头盔和车把），CHAPTER13-01 L3456–L3496（展示动作），CHAPTER28-01 L6026–L6051（休息）；从自行车等活动适配为滑板车，不视为书中滑板车原句。",
+    "补充：滑板车站脚与蹬地动作、短回应及自然衔接。停止台词与旁白采用用户确认的无刹车版本；IPA与中文为新增参考。"
+  ],
+  "archive": {
+    "date": "2026-10-10",
+    "filename": "2026-10-10-玩滑板车-01.html",
+    "sequence": 1,
+    "created_at": "2026-10-10T16:55:14.738144+08:00",
+    "image_filename": "2026-10-10-玩滑板车-01.png",
+    "image_width": 1080,
+    "image_height": 3794
+  }
+}
