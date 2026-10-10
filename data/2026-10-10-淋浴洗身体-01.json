@@ -1,0 +1,125 @@
+{
+  "title": "淋浴：洗洗身体，冲净泡泡",
+  "intent": "想要毛巾时，开口表达需要。",
+  "mode": "full",
+  "scene": "淋浴洗身体",
+  "english_title": "Shower Time",
+  "date": "2026-10-10",
+  "theme_id": 6,
+  "theme": "洗澡与身体",
+  "dialogue": [
+    {
+      "role": "parent",
+      "english": "It's time to take a shower.",
+      "ipa": "/ɪts taɪm tə teɪk ə ˈʃaʊɚ/",
+      "chinese": "该洗澡啦。"
+    },
+    {
+      "role": "parent",
+      "english": "Take off your clothes.",
+      "ipa": "/teɪk ɔf jʊr kloʊðz/",
+      "chinese": "把衣服脱掉吧。"
+    },
+    {
+      "role": "action",
+      "text": "大人先调好、试好水温，帮孩子站稳，淋湿身体。"
+    },
+    {
+      "role": "parent",
+      "english": "Squeeze some body wash into your hand.",
+      "ipa": "/skwiːz səm ˈbɑdi wɑʃ ˈɪntuː jʊr hænd/",
+      "chinese": "往手心里挤一点沐浴露。"
+    },
+    {
+      "role": "action",
+      "text": "挤一点沐浴露，搓出泡泡。"
+    },
+    {
+      "role": "child",
+      "english": "Look! Bubbles!",
+      "ipa": "/lʊk ˈbʌbəlz/",
+      "chinese": "看！泡泡！"
+    },
+    {
+      "role": "action",
+      "text": "下面几句跟着实际动作说，不用一口气说完；孩子能自己洗的地方，让孩子试试。"
+    },
+    {
+      "role": "parent",
+      "english": "Wash your hands.",
+      "ipa": "/wɑʃ jʊr hændz/",
+      "chinese": "洗洗小手。"
+    },
+    {
+      "role": "parent",
+      "english": "Wash your arms.",
+      "ipa": "/wɑʃ jʊr ɑrmz/",
+      "chinese": "洗洗胳膊。"
+    },
+    {
+      "role": "parent",
+      "english": "Wash your tummy.",
+      "ipa": "/wɑʃ jʊr ˈtʌmi/",
+      "chinese": "洗洗小肚子。"
+    },
+    {
+      "role": "parent",
+      "english": "Wash your legs.",
+      "ipa": "/wɑʃ jʊr lɛɡz/",
+      "chinese": "洗洗腿。"
+    },
+    {
+      "role": "parent",
+      "english": "Wash your feet.",
+      "ipa": "/wɑʃ jʊr fiːt/",
+      "chinese": "洗洗小脚。"
+    },
+    {
+      "role": "action",
+      "text": "洗脚时大人帮忙扶稳；洗到后背，大人接手。"
+    },
+    {
+      "role": "parent",
+      "english": "I'll wash your back.",
+      "ipa": "/aɪl wɑʃ jʊr bæk/",
+      "chinese": "我来帮你洗背。"
+    },
+    {
+      "role": "parent",
+      "english": "Let's rinse off the soap.",
+      "ipa": "/lɛts rɪns ɔf ðə soʊp/",
+      "chinese": "我们把泡泡冲干净吧。"
+    },
+    {
+      "role": "action",
+      "text": "冲干净、关好水，准备擦干。"
+    },
+    {
+      "role": "child",
+      "english": "A towel, please.",
+      "ipa": "/ə ˈtaʊəl pliːz/",
+      "chinese": "请给我一条毛巾。",
+      "cue": "先递毛巾，再替孩子示范这句；愿意就轻邀跟一次，不说也照常擦干。",
+      "target": true
+    },
+    {
+      "role": "parent",
+      "english": "Let's dry you off.",
+      "ipa": "/lɛts draɪ juː ɔf/",
+      "chinese": "来，把你擦干。"
+    }
+  ],
+  "sources": [
+    "内部核对：CHAPTER04-06 L1462–L1505；脱衣原句，洗澡／洗身体／冲净／擦干按淋浴与用户确认的小幅改写；身体部位对应 CHAPTER31-05 L6614–L6629。",
+    "用户确认的沐浴露句及简短孩子回应、洗背衔接为补充；IPA与中文为新增，不呈现在页面中。"
+  ],
+  "archive": {
+    "date": "2026-10-10",
+    "filename": "2026-10-10-淋浴洗身体-01.html",
+    "sequence": 1,
+    "created_at": "2026-10-10T15:18:07.908447+08:00",
+    "image_filename": "2026-10-10-淋浴洗身体-01.png",
+    "image_width": 1080,
+    "image_height": 3746
+  }
+}
