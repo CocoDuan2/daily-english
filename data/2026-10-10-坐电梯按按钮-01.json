@@ -1,0 +1,168 @@
+{
+  "title": "坐电梯，自己按按钮",
+  "intent": "表达自己想按按钮。",
+  "mode": "full",
+  "scene": "坐电梯按按钮",
+  "english_title": "Taking the Elevator",
+  "date": "2026-10-10",
+  "theme_id": 20,
+  "theme": "坐车电梯与交通",
+  "dialogue": [
+    {
+      "role": "parent",
+      "english": "Let's take the elevator.",
+      "ipa": "/lɛts teɪk ði ˈɛləˌveɪtɚ/",
+      "chinese": "我们坐电梯吧。",
+      "cue": "以“上楼去20楼”为主线；下楼去一楼时，用对应的替换句。"
+    },
+    {
+      "role": "child",
+      "english": "Can I press it?",
+      "ipa": "/kæn aɪ prɛs ɪt/",
+      "chinese": "我可以按吗？",
+      "cue": "孩子指着按钮、想自己按时，先回应，再示范这句；愿意就跟一次。",
+      "target": true
+    },
+    {
+      "role": "parent",
+      "english": "Sure! Press the up button.",
+      "ipa": "/ʃʊr prɛs ði ʌp ˈbʌtən/",
+      "chinese": "可以呀！按向上的按钮。"
+    },
+    {
+      "role": "action",
+      "text": "下楼时换成："
+    },
+    {
+      "role": "parent",
+      "english": "Sure! Press the down button.",
+      "ipa": "/ʃʊr prɛs ðə daʊn ˈbʌtən/",
+      "chinese": "可以呀！按向下的按钮。"
+    },
+    {
+      "role": "child",
+      "english": "This one?",
+      "ipa": "/ðɪs wʌn/",
+      "chinese": "这个吗？"
+    },
+    {
+      "role": "parent",
+      "english": "Yes, that one. Let's wait here.",
+      "ipa": "/jɛs ðæt wʌn lɛts weɪt hɪr/",
+      "chinese": "对，就是那个。我们在这里等。"
+    },
+    {
+      "role": "child",
+      "english": "Okay!",
+      "ipa": "/oʊˈkeɪ/",
+      "chinese": "好！"
+    },
+    {
+      "role": "action",
+      "text": "孩子按好按钮，家长陪着等。电梯到了，里面有人要出来。"
+    },
+    {
+      "role": "parent",
+      "english": "The elevator is here. Let's let people out first.",
+      "ipa": "/ði ˈɛləˌveɪtɚ ɪz hɪr lɛts lɛt ˈpiːpəl aʊt fɝst/",
+      "chinese": "电梯来了。我们先让里面的人出来。"
+    },
+    {
+      "role": "action",
+      "text": "等大家出来、门完全打开后，再一起进去。"
+    },
+    {
+      "role": "parent",
+      "english": "Hold my hand. Let's get in.",
+      "ipa": "/hoʊld maɪ hænd lɛts ɡɛt ɪn/",
+      "chinese": "牵着我的手。我们进去吧。"
+    },
+    {
+      "role": "parent",
+      "english": "Press twenty, please.",
+      "ipa": "/prɛs ˈtwɛnti pliːz/",
+      "chinese": "请按一下“20”。"
+    },
+    {
+      "role": "action",
+      "text": "去一楼时换成："
+    },
+    {
+      "role": "parent",
+      "english": "Press one, please.",
+      "ipa": "/prɛs wʌn pliːz/",
+      "chinese": "请按一下“1”。"
+    },
+    {
+      "role": "child",
+      "english": "I did it!",
+      "ipa": "/aɪ dɪd ɪt/",
+      "chinese": "我按好啦！"
+    },
+    {
+      "role": "parent",
+      "english": "That's it! Come stand next to me.",
+      "ipa": "/ðæts ɪt kʌm stænd nɛkst tə miː/",
+      "chinese": "对啦！过来站在我旁边。"
+    },
+    {
+      "role": "action",
+      "text": "孩子按好楼层，站在家长身边，电梯开始移动。"
+    },
+    {
+      "role": "child",
+      "english": "We're going up!",
+      "ipa": "/wɪr ˈɡoʊɪŋ ʌp/",
+      "chinese": "我们往上走啦！"
+    },
+    {
+      "role": "action",
+      "text": "下楼时换成："
+    },
+    {
+      "role": "child",
+      "english": "We're going down!",
+      "ipa": "/wɪr ˈɡoʊɪŋ daʊn/",
+      "chinese": "我们往下走啦！"
+    },
+    {
+      "role": "action",
+      "text": "到达目标楼层，等门完全打开。"
+    },
+    {
+      "role": "parent",
+      "english": "We're on the twentieth floor. Let's get out.",
+      "ipa": "/wɪr ɑn ðə ˈtwɛntiəθ flɔr lɛts ɡɛt aʊt/",
+      "chinese": "我们到二十楼了。出去吧。"
+    },
+    {
+      "role": "action",
+      "text": "到一楼时换成："
+    },
+    {
+      "role": "parent",
+      "english": "We're on the first floor. Let's get out.",
+      "ipa": "/wɪr ɑn ðə fɝst flɔr lɛts ɡɛt aʊt/",
+      "chinese": "我们到一楼了。出去吧。"
+    },
+    {
+      "role": "child",
+      "english": "Let's go!",
+      "ipa": "/lɛts ɡoʊ/",
+      "chinese": "走吧！"
+    }
+  ],
+  "sources": [
+    "参考／改写：用户提供《美国家庭万用亲子英文英语8000句》本地整理版 CHAPTER01-18 L591–L624。保留 The elevator is here. 与 Let's get out. 的原句片段；Wait until everyone gets off. 改为 Let's let people out first.；Can you press the first floor? 按实际数字按钮改为 Press one, please.／Press twenty, please.；乘坐、按键、方向与到达的衔接按用户确认场景调整，不将整段视作原书原文。",
+    "补充：孩子请求 Can I press it?、短回应、站在家长旁的邀请及必要衔接；主线14句另含4句用户指定的上／下行、一楼／20楼替换句，全部配点读。IPA及中文现场释义为新增参考。"
+  ],
+  "archive": {
+    "date": "2026-10-10",
+    "filename": "2026-10-10-坐电梯按按钮-01.html",
+    "sequence": 1,
+    "created_at": "2026-10-10T17:29:04.524961+08:00",
+    "image_filename": "2026-10-10-坐电梯按按钮-01.png",
+    "image_width": 1080,
+    "image_height": 5214
+  }
+}
