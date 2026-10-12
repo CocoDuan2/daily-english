@@ -1,0 +1,118 @@
+{
+  "title": "上楼梯、下楼梯",
+  "intent": "牵手走稳，不跑不赶",
+  "mode": "full",
+  "scene": "上下楼梯",
+  "english_title": "Up and Down the Stairs",
+  "theme_id": 20,
+  "theme": "坐车电梯与交通",
+  "dialogue": [
+    {
+      "role": "action",
+      "text": "大人全程在孩子身边并牵好手，按孩子的速度走。"
+    },
+    {
+      "role": "parent",
+      "english": "Hold my hand.",
+      "ipa": "/hoʊld maɪ hænd/",
+      "chinese": "牵好我的手。"
+    },
+    {
+      "role": "parent",
+      "english": "Watch your step.",
+      "ipa": "/wɑtʃ jɚ stɛp/",
+      "chinese": "注意脚下。"
+    },
+    {
+      "role": "parent",
+      "english": "Go up the stairs.",
+      "ipa": "/ɡoʊ ʌp ðə stɛrz/",
+      "chinese": "上楼梯。"
+    },
+    {
+      "role": "parent",
+      "english": "Step by step.",
+      "ipa": "/stɛp baɪ stɛp/",
+      "chinese": "一步一步来。"
+    },
+    {
+      "role": "child",
+      "english": "I'm going up!",
+      "ipa": "/aɪm ˈɡoʊɪŋ ʌp/",
+      "chinese": "我上楼啦！",
+      "cue": "大人先牵好手，自然示范这句；孩子愿意才跟一次。",
+      "target": true
+    },
+    {
+      "role": "parent",
+      "english": "Don't run.",
+      "ipa": "/doʊnt rʌn/",
+      "chinese": "不要跑。"
+    },
+    {
+      "role": "parent",
+      "english": "Slowly.",
+      "ipa": "/ˈsloʊli/",
+      "chinese": "慢慢来。"
+    },
+    {
+      "role": "parent",
+      "english": "Up we go!",
+      "ipa": "/ʌp wi ɡoʊ/",
+      "chinese": "我们上楼啦！"
+    },
+    {
+      "role": "parent",
+      "english": "We're upstairs.",
+      "ipa": "/wɪr ˌʌpˈstɛrz/",
+      "chinese": "我们到楼上了。"
+    },
+    {
+      "role": "action",
+      "text": "到楼上先停稳，再牵着孩子转身下楼。"
+    },
+    {
+      "role": "parent",
+      "english": "Now, go down the stairs.",
+      "ipa": "/naʊ ɡoʊ daʊn ðə stɛrz/",
+      "chinese": "现在下楼梯。"
+    },
+    {
+      "role": "parent",
+      "english": "Hold the rail.",
+      "ipa": "/hoʊld ðə reɪl/",
+      "chinese": "扶好扶手。"
+    },
+    {
+      "role": "parent",
+      "english": "Watch your step.",
+      "ipa": "/wɑtʃ jɚ stɛp/",
+      "chinese": "注意脚下。"
+    },
+    {
+      "role": "parent",
+      "english": "Down we go!",
+      "ipa": "/daʊn wi ɡoʊ/",
+      "chinese": "我们下楼啦！"
+    },
+    {
+      "role": "parent",
+      "english": "We're downstairs.",
+      "ipa": "/wɪr ˌdaʊnˈstɛrz/",
+      "chinese": "我们到楼下了。"
+    }
+  ],
+  "sources": [
+    "〔改〕CHAPTER01-18 L621：Don't ever run on the stairs. → Don't run.",
+    "〔改〕CHAPTER01-18 L623：Go down one step at a time. → Step by step."
+  ],
+  "archive": {
+    "date": "2026-10-12",
+    "filename": "2026-10-12-上下楼梯-01.html",
+    "sequence": 1,
+    "created_at": "2026-10-12T17:14:07.232914+08:00",
+    "image_filename": "2026-10-12-上下楼梯-01.png",
+    "image_width": 1080,
+    "image_height": 3728
+  }
+}

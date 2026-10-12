@@ -1,0 +1,109 @@
+{
+  "title": "坐地铁：到站、等车、上车、找座位、下车",
+  "intent": "等车时牵好手；一起找座位、下车。",
+  "mode": "full",
+  "scene": "坐地铁",
+  "english_title": "Taking the Subway",
+  "date": "2026-10-12",
+  "theme_id": 20,
+  "theme": "坐车电梯与交通",
+  "dialogue": [
+    {
+      "role": "parent",
+      "english": "We're at the subway station.",
+      "ipa": "/wɪr æt ðə ˈsʌbweɪ ˈsteɪʃən/",
+      "chinese": "我们到地铁站了。"
+    },
+    {
+      "role": "parent",
+      "english": "Let's wait behind the yellow line.",
+      "ipa": "/lɛts weɪt bɪˈhaɪnd ðə ˈjɛloʊ laɪn/",
+      "chinese": "我们在黄线后面等。"
+    },
+    {
+      "role": "child",
+      "english": "The train is coming!",
+      "ipa": "/ðə treɪn ɪz ˈkʌmɪŋ/",
+      "chinese": "列车来啦！"
+    },
+    {
+      "role": "parent",
+      "english": "The train is here. Let's wait for people to get off.",
+      "ipa": "/ðə treɪn ɪz hɪr. lɛts weɪt fɚ ˈpipəl tə ɡɛt ɔf/",
+      "chinese": "列车到了。我们等大家下车。"
+    },
+    {
+      "role": "parent",
+      "english": "Now let's get on.",
+      "ipa": "/naʊ lɛts ɡɛt ɑn/",
+      "chinese": "现在我们上车吧。"
+    },
+    {
+      "role": "child",
+      "english": "Hold my hand, please.",
+      "ipa": "/hoʊld maɪ hænd pliːz/",
+      "chinese": "请牵着我的手。",
+      "cue": "上车前先牵好孩子，再替孩子示范这句；愿意的话，轻轻邀请一次。",
+      "target": true
+    },
+    {
+      "role": "parent",
+      "english": "Of course.",
+      "ipa": "/əv kɔrs/",
+      "chinese": "当然可以。"
+    },
+    {
+      "role": "parent",
+      "english": "Let's find a seat.",
+      "ipa": "/lɛts faɪnd ə siːt/",
+      "chinese": "我们找个座位吧。"
+    },
+    {
+      "role": "child",
+      "english": "I found one!",
+      "ipa": "/aɪ faʊnd wʌn/",
+      "chinese": "我找到一个啦！"
+    },
+    {
+      "role": "parent",
+      "english": "Let's sit together.",
+      "ipa": "/lɛts sɪt təˈɡɛðɚ/",
+      "chinese": "我们坐在一起吧。"
+    },
+    {
+      "role": "action",
+      "text": "列车开动后坐稳；到站等车停稳、车门打开再下车。"
+    },
+    {
+      "role": "parent",
+      "english": "This is our stop.",
+      "ipa": "/ðɪs ɪz aʊɚ stɑp/",
+      "chinese": "到我们这站了。"
+    },
+    {
+      "role": "child",
+      "english": "Our stop!",
+      "ipa": "/aʊɚ stɑp/",
+      "chinese": "我们这站！"
+    },
+    {
+      "role": "parent",
+      "english": "Let's get off together.",
+      "ipa": "/lɛts ɡɛt ɔf təˈɡɛðɚ/",
+      "chinese": "我们一起下车。"
+    }
+  ],
+  "sources": [
+    "〔改〕CHAPTER30-05 L6492：将公车到站、上车表达调整为地铁情境。",
+    "〔改〕CHAPTER30-05 L6494：将找空座的表达调整为适合幼儿的短句。"
+  ],
+  "archive": {
+    "date": "2026-10-12",
+    "filename": "2026-10-12-坐地铁-01.html",
+    "sequence": 1,
+    "created_at": "2026-10-12T15:57:33.165402+08:00",
+    "image_filename": "2026-10-12-坐地铁-01.png",
+    "image_width": 1080,
+    "image_height": 3486
+  }
+}
